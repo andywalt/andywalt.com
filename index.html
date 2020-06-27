@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<title>Andy Walt</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Sriracha&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="aw_script.js"></script>
+
+
+	<body onload="showSlides();">
+		<div class="header">
+			<img class="headshot" src="AndyHeadshot.jpg" alt="Andy Face">
+			<div class="header_text">
+				<h1>Andy Walt</h1>
+				<h4>Remarkable Experiences Creator</h4>
+				<p>Location: Louisiana</p>
+				<p>Status: Open for Work</p>
+				<p>Snack: Voodoo Zapp's Chips</p>
+				<p>Insert Social Media Icons</p>
+
+			</div>
+		</div>
+		<div class="information">
+			<div class="about">
+				<h3>About Me</h3>
+				<p>Hi, I'm Andy. Nice to meet you. I'm a relational problem solver that has lived all over the world. I enjoy epic stories, anecdotal humor, &amp; magical experiences.</p>
+				<p>I'm a self-taught web developer with a background in communications, marketing, and non-profits. I'm a "figure it out" go-getter that values wisdom, sustainability, and leaving people better than I found them &#40;with both food and business&#41;.</p>
+			</div>
+
+			<div class="portfolio">
+				<a onclick="revealPortfolio()">
+					<h3>Portfolio</h3>
+				</a>
+
+				<div id="portfolio_content">
+					<p>Most of my work has been with Non-Profit Web Branding. I'm currently working on developing iOS Applications.</p>
+					<div class="slideshow-container">
+
+						<div class="mySlides fade">
+							<img class="portfolio_icons" src="portfolio_icons/churches.png">
+						</div>
+
+						<div class="mySlides fade">
+							<img class="portfolio_icons" src="portfolio_icons/nonprofit.png">
+						</div>
+
+						<div class="mySlides fade">
+							<img class="portfolio_icons" src="portfolio_icons/business.png">
+						</div>
+
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					</div>
+					<br>
+
+					<div class="image_dots" style="text-align:center">
+					  <span class="dot" onclick="currentSlide(1)"></span>
+					  <span class="dot" onclick="currentSlide(2)"></span>
+					  <span class="dot" onclick="currentSlide(3)"></span>
+					</div>
+
+				</div>
+
+
+			</div>
+
+			<div class="work">
+				<div class="work_list">
+					<h3 class="work_title">Work</h3>
+					<h4>Which is more important to you?</h4>
+
+					<p class="choose_option"><a onclick="revealRole()">Role</a> or <a onclick="revealOrg()">Organization</a> or <a onclick="revealBoth()">Both</a></p>
+					<div class="work_history">
+						<div class="roles">
+							<ul id="role_list">
+								<li>Customer Marketing</li>
+								<li>Operations &amp; Sales</li>
+								<li>Barista</li>
+								<li>Sports Marketing</li>
+								<li>Sponsors &amp; Events</li>
+								<li>Creative Director</li>
+								<li>Operations Director</li>
+								<li>Hospitality Specialist</li>
+								<li>Student Engagement</li>
+								<li>Pleasure Specialist</li>
+								<li>Specialist</li>
+								<li>Stylist</li>
+								<li>Cadet</li>
+							</ul>
+						</div>
+						<div class="organizations">
+							<ul id="org_list">
+								<li>Salesforce</li>
+								<li>Tailors' Keep</li>
+								<li>Blue Bottle Inc</li>
+								<li>Oracle</li>
+								<li>Gateway Church</li>
+								<li>MAP1040</li>
+								<li>Core Credit Enhancement</li>
+								<li>Renaissance Hotel</li>
+								<li>Church of the Highlands</li>
+								<li>Chick-fil-a</li>
+								<li>Apple Inc</li>
+								<li>Lucky Brand Jeans</li>
+								<li>Air Force Academy</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+	
+				<div class="nonprofit">
+					<h4>Non-Profit Work</h4>
+					<div class="nonprofit_box">
+						<div class="nonprofit_role">
+							<ul>
+								<li>Founding Launch Team Member &amp; Small Groups Director </li>
+								<li>Creative Director</li>
+								<li>Founder of 300+ Basketball Outreach</li>
+								<li>Event Support</li>
+							</ul>
+						</div>
+						<div class="nonprofit_names">
+							<ul>
+								<li>Sozo Church</li>
+								<li>MAP1040</li>
+								<li>Baller's Club</li>
+								<li>Association of Related Churches</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="skills">
+					<h3>Skills</h3>
+					<div class="skills_box">
+						<div class="hard_skills">
+							<h5>Hard Skills</h5>
+							<ul>
+								<li>Data-Driven Marketing</li>
+								<li>Sales</li>
+								<li>Public Speaking</li>
+								<li>UX Design</li>
+								<li>Operations</li>
+								<li>Creative Writing</li>
+								<li>Social Media</li>
+								<li>Project LifeCycle Management</li>
+							</ul>
+						</div>
+						<div class="soft_skills">
+							<h5>Soft Skills</h5>
+							<ul>
+								<li>Creativity</li>
+								<li>Collaboration</li>
+								<li>Emotional Intelligence</li>
+								<li>Critical Thinking</li>
+								<li>Executive Presence</li>
+								<li>Southern Hospitality</li>
+								<li>Work Ethic</li>
+								<li>Leadership</li>
+							</ul>
+						</div>
+						<div class="technical_skills">
+							<h5>Technical</h5>
+							<ul>
+								<li>Git</li>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>Javascript</li>
+								<li>Swift</li>
+								<li>SwiftUI</li>
+								<li>Ruby</li>
+								<li>Ruby on Rails</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="places_lived_container">
+				<h4>Where All I've Lived</h4>
+				<img class="places_lived" src="places_lived.png" alt="Image of USA and India">
+			</div>
+		</div>
+	</body>
+</html>

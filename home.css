@@ -1,0 +1,152 @@
+@font-face {
+	font-family: 'Oswald', sans-serif;
+	font-family: 'Sriracha', cursive;
+}
+
+
+body {
+	background-color: #000000;
+	font-family: 'Oswald';
+	font-weight: 300;
+}
+
+.main_container {
+	position: relative;
+  	text-align: center;
+  	color: white;
+}
+
+
+.redkeys {
+	max-width: 100%;
+	opacity: 0.7;
+	filter: blur(2px);
+  	-webkit-filter: blur(2px);
+}
+
+.centered_text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+  	color: #D1D1D1;
+  	padding-bottom: 300px;
+}
+
+.status_notifications {
+	display: flex;
+	width: 700px;
+}
+
+.statuses {
+	flex: 1;
+	margin: 10px;
+}
+
+.social_icons i  {
+	padding: 20px;
+	font-size: 30px;
+}
+
+.social_icons a:link, a:visited, a:active {
+	color: #D1D1D1;
+}
+
+.social_icons a:hover {
+	color: #8b0000;
+}
+
+
+.options_container {
+	display: flex;
+}
+
+.about_box, .portfolio_box, .work_box, .skills_box, .locations_box {
+	flex: 1;
+	height: 300px;
+	background-color: #420000;
+	padding: 5px;
+	margin: 5px;
+	text-align: center;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+.options_container h4 {
+	font-size: 25px;
+	line-height: 225px;
+	letter-spacing: 3px;
+	color: #D1D1D1
+}
+
+.about_box {
+	background-image: url("images/about_cloud.png");
+
+}
+
+.portfolio_box {
+	background-image: url("images/portfolio_cloud.png");
+
+}
+
+.work_box {
+	background-image: url("images/work_cloud.png");
+
+}
+
+.skills_box {
+	background-image: url("images/skills_cloud.png");
+
+}
+
+.locations_box {
+	background-image: url("images/locations_cloud.png");
+
+}
+
+.about_box:hover, .portfolio_box:hover, .work_box:hover, .skills_box:hover, .locations_box:hover {
+	background-image: url("images/cloud_gif/redcloud.gif");
+}
+
+.about_box:hover h4, .portfolio_box:hover h4, .work_box:hover h4, .skills_box:hover h4, .locations_box:hover h4 {
+	letter-spacing: 5px;
+	font-size: 30px;
+	line-height: 215px;
+}
+
+hr.footer_divider {
+	border: none;
+	border-top: 0.1px solid #D1D1D1;
+	margin: 10px 30px 10px 30px;
+}
+
+.footer_container {
+	font-size: 12px;
+	font-family: Arial;
+	color: #D1D1D1;
+	display: flex;
+	text-align: left;
+	margin-left: 30px;
+}
+
+.copyright {
+	flex: 1;
+
+}
+
+.more_info {
+	flex: 1;
+	padding-left: 50px;
+}
+
+.social_links {
+	flex: 1;
+}
+
+.social_links ul {
+	list-style-type: none;
+}
