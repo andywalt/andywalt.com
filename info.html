@@ -8,23 +8,41 @@
 
 
 	<body onload="showSlides();">
-		<div class="header">
-			<img class="headshot" src="../AndyHeadshot.jpg" alt="Andy Face">
-			<div class="header_text">
-				<h1>Andy Walt</h1>
-				<h4>Remarkable Experiences Creator</h4>
-				<p>Location: Louisiana</p>
-				<p>Status: Open for Work</p>
-				<p>Snack: Voodoo Zapp's Chips</p>
-				<p>Insert Social Media Icons</p>
-
-			</div>
-		</div>
+		<header class="nav-wrapper">
+			<nav class="nav">
+				<div class="nav left">
+						<a href="home.html">AW</a>
+					</div>
+				<div class="nav right">
+					<ul class="nav-list">
+						<li><a href="">About</a></li>
+						<li><a href="">Portfolio</a></li>
+						<li><a href="">Work</a></li>
+						<li><a href="">Skills</a></li>
+						<li><a href="home.html">Locations</a></li>
+					</ul>
+					
+				</div>
+			</nav>
+		</header>
 		<div class="information">
 			<div class="about">
 				<h3>About Me</h3>
-				<p>Hi, I'm Andy. Nice to meet you. I'm a relational problem solver that has lived all over the world. I enjoy epic stories, anecdotal humor, &amp; magical experiences.</p>
-				<p>I'm a self-taught web developer with a background in communications, marketing, and non-profits. I'm a "figure it out" go-getter that values wisdom, sustainability, and leaving people better than I found them &#40;with both food and business&#41;.</p>
+				<div class="about_container">
+					<img class="headshot" src="../AndyHeadshot.jpg" alt="Andy Face">
+					<p><b>Hi, I'm Andy. Nice to meet you.</b>
+					<br>
+					<br>
+					I'm a relational problem solver that has lived all over the world. I enjoy epic stories, anecdotal humor, &amp; magical experiences.
+					<br>
+					<br>
+					I'm a self-taught web developer with a background in communications, marketing, and non-profits. I'm a "figure it out" go-getter that values wisdom, sustainability, and leaving people better than I found them &#40;with both food and business&#41;.
+					<br>
+					<br>
+					This website has information on who I am and what I can do. It's not all-inclusive, so if there is anything you would love to know, feel free to ask!
+					</p>
+					
+				</div>
 			</div>
 
 			<div class="portfolio">
@@ -37,15 +55,15 @@
 					<div class="slideshow-container">
 
 						<div class="mySlides fade">
-							<img class="portfolio_icons" src="portfolio_icons/churches.png">
+							<img class="portfolio_icons" src="../portfolio_icons/churches.png">
 						</div>
 
 						<div class="mySlides fade">
-							<img class="portfolio_icons" src="portfolio_icons/nonprofit.png">
+							<img class="portfolio_icons" src="../portfolio_icons/nonprofit.png">
 						</div>
 
 						<div class="mySlides fade">
-							<img class="portfolio_icons" src="portfolio_icons/business.png">
+							<img class="portfolio_icons" src="../portfolio_icons/business.png">
 						</div>
 
 						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -180,7 +198,7 @@
 			</div>
 			<div class="places_lived_container">
 				<h4>Where All I've Lived</h4>
-				<img class="places_lived" src="places_lived.png" alt="Image of USA and India">
+				<img class="places_lived" src="../places_lived.png" alt="Image of USA and India">
 			</div>
 		</div>
 	</body>

@@ -75,12 +75,15 @@ body {
 }
 
 
-
 .options_container h4 {
 	font-size: 25px;
 	line-height: 225px;
 	letter-spacing: 3px;
 	color: #D1D1D1
+}
+
+.options_container a {
+	text-decoration: none;
 }
 
 .about_box {
@@ -131,6 +134,18 @@ hr.footer_divider {
 	display: flex;
 	text-align: left;
 	margin-left: 30px;
+}
+
+.footer a {
+	text-decoration: none;
+}
+
+.footer a:hover {
+	color: #333333;
+}
+
+.footer_title {
+	text-decoration: underline;
 }
 
 .copyright {
