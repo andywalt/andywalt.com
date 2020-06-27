@@ -84,32 +84,32 @@ body {
 }
 
 .about_box {
-	background-image: url("images/about_cloud.png");
+	background-image: url("../images/about_cloud.png");
 
 }
 
 .portfolio_box {
-	background-image: url("images/portfolio_cloud.png");
+	background-image: url("../images/portfolio_cloud.png");
 
 }
 
 .work_box {
-	background-image: url("images/work_cloud.png");
+	background-image: url("../images/work_cloud.png");
 
 }
 
 .skills_box {
-	background-image: url("images/skills_cloud.png");
+	background-image: url("../images/skills_cloud.png");
 
 }
 
 .locations_box {
-	background-image: url("images/locations_cloud.png");
+	background-image: url("../images/locations_cloud.png");
 
 }
 
 .about_box:hover, .portfolio_box:hover, .work_box:hover, .skills_box:hover, .locations_box:hover {
-	background-image: url("images/cloud_gif/redcloud.gif");
+	background-image: url("../images/cloud_gif/redcloud.gif");
 }
 
 .about_box:hover h4, .portfolio_box:hover h4, .work_box:hover h4, .skills_box:hover h4, .locations_box:hover h4 {
