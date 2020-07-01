@@ -135,7 +135,7 @@ body a {
 	height: 100vh;
 	position: relative;
 	overflow: hidden;
-	background: url('../images/folders.jpg') no-repeat center center fixed;
+	background: url('../images/backgrounds/folders.jpg') no-repeat center center fixed;
 	background-size: cover;
 	background-color: grey;
 }
@@ -267,7 +267,7 @@ body a {
 	height: 100vh;
 	position: relative;
 	overflow: hidden;
-	background: url('../images/sanfrancisco.jpg') no-repeat center center fixed;
+	background: url('../images/backgrounds/sanfrancisco.jpg') no-repeat center center fixed;
 	background-size: cover;
 	background-color: grey;
 	
@@ -275,11 +275,9 @@ body a {
 
 .work_content {
 	width: 1000px;
-	background-color: white;
+	
 	margin-left: auto;
 	margin-right: auto;
-	border-radius: 25px;
-	box-shadow: 0 10px 50px rgba(0,0,0,0.3);
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -287,6 +285,11 @@ body a {
 }
 
 .work_title {
+	text-align: center;
+	color: black;
+	font-size: 50px;
+	margin: 0px;
+	font-family: Arial;
 }
 
 .work_history {
@@ -297,25 +300,32 @@ body a {
 .choose_option {
 }
 
-
-#role_list {
+.work_content img {
+	margin: 0 auto;
 	display: block;
 }
 
-
-.organizations {
+.roles, .organizations, .non_profit_role, .non_profit_org {
+	flex: 1;
+	width: 100%;
+	padding: 1rem;
+	background-color: #D2B48C;
+	margin: 10px;
+	border-radius: 25px;
+	box-shadow: 0 10px 50px rgba(0,0,0,0.3);
+	position: relative;
+	color: #333333;
 }
 
-#org_list {
-	display: block;
+.roles h5, .organizations h5, .non_profit_role h5, .non_profit_org h5 {
+	text-align: center;
+	font-size: 17px;
+
 }
 
-.nonprofit_box {
-	line-height: 150%;
-}
-
-.nonprofit_names {
-	padding-left: 95px;
+.roles ul, .organizations ul, .non_profit_role ul, .non_profit_org ul {
+	padding-left: 10px;
+	
 }
 
 .skills_container {
@@ -323,10 +333,9 @@ body a {
 	height: 100vh;
 	position: relative;
 	overflow: hidden;
-	background: url('../images/code.jpg') no-repeat center center fixed;
+	background: url('../images/backgrounds/code.jpg') no-repeat center center fixed;
 	background-size: cover;
 	background-color: grey;
-	backdrop-filter: blur(10px);
 	
 }
 
@@ -357,7 +366,7 @@ body a {
 	flex: 1;
 	width: 100%;
 	padding: 1rem;
-	background-color: #FDD023;
+	background-color: #72A5AA;
 	margin: 50px;
 	border-radius: 25px;
 	box-shadow: 0 10px 50px rgba(0,0,0,0.3);
@@ -385,7 +394,7 @@ body a {
 	height: 100vh;
 	position: relative;
 	overflow: hidden;
-	background: url('../images/sanfrancisco.jpg') no-repeat center center fixed;
+	background: url('../images/backgrounds/plane.jpg') no-repeat center center fixed;
 	background-size: cover;
 	background-color: grey;
 }
@@ -409,4 +418,126 @@ body a {
 	margin-left: auto; 
 	margin-right: auto; 
 	display: block;
+}
+
+.timeline {
+	width: 100%;
+	max-width: 1800px;
+	margin: 0 auto;
+	text-align: center;
+	white-space: nowrap;
+	overflow-x: hidden;
+	background: url('../images/backgrounds/plane.jpg') no-repeat center center fixed;
+	background-size: cover;
+	background-color: grey;
+	height: 100vh;
+
+}
+
+.timeline ol {
+	font-size: 0;
+	width: 100vw;
+	padding: 400px 0;
+	margin-left: -100px;
+	transition: all 1s;
+
+}
+
+.timeline ol li {
+	position: relative;
+	display: inline-block;
+	list-style-type: none;
+	width: 75px;
+	height: 3px;
+	background: #fff
+
+}
+
+
+
+.timeline ol li:not(:first-child) {
+  margin-left: 14px;
+}
+
+.timeline ol li::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 1px);
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: purple;
+}
+
+/* Button */
+.timeline ol li div {
+  position: absolute;
+  left: calc(100% + 6px);
+  width: 120px;
+  height: 75px;
+  padding: 15px;
+  font-size: 1rem;
+  white-space: normal;
+  color: black;
+  background: white;
+}
+
+.timeline ol li div::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ol li:nth-child(odd) div {
+  top: -16px;
+  transform: translateY(-100%);
+}
+
+.timeline ol li:nth-child(odd) div::before {
+  top: 100%;
+  border-width: 8px 8px 0 0;
+  border-color: white transparent transparent transparent;
+}
+
+.timeline ol li:nth-child(even) div {
+  top: calc(100% + 16px);
+}
+
+.timeline ol li:nth-child(even) div::before {
+  top: -8px;
+  border-width: 8px 0 0 8px;
+  border-color: transparent transparent transparent white;
+}
+
+.timeline time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.timeline .arrows {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.timeline .arrows .arrow__prev {
+  margin-right: 20px;
+}
+
+.timeline .disabled {
+  opacity: .5;
+}
+
+.timeline .arrows img {
+  width: 45px;
+  height: 45px;
 }
