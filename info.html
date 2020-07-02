@@ -3,7 +3,7 @@
 	<title>Andy Walt</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="info.css">
-	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Sriracha&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400&family=Bangers&display=swap" rel="stylesheet">
 	<script type="text/javascript" src="aw_script.js"></script>
 
 
@@ -15,18 +15,18 @@
 					</div>
 				<div class="nav right">
 					<ul class="nav-list">
-						<li><a href="">About</a></li>
-						<li><a href="">Portfolio</a></li>
-						<li><a href="">Work</a></li>
-						<li><a href="">Skills</a></li>
-						<li><a href="home.html">Locations</a></li>
+						<li><a href="info.html#about">About</a></li>
+						<li><a href="info.html#portfolio">Portfolio</a></li>
+						<li><a href="info.html#work">Work</a></li>
+						<li><a href="info.html#skills">Skills</a></li>
+						<li><a href="info.html#locations">Locations</a></li>
 					</ul>
 					
 				</div>
 			</nav>
 		</header>
 		<div class="information">
-			<div class="about">
+			<div id="about">
 				<div class="about_container">
 					<img class="headshot" src="../AndyHeadshot.jpg" alt="Andy Face">
 					<div class="about_content">
@@ -49,23 +49,36 @@
 				</div>
 			</div>
 
-			<div class="portfolio_container">
+			<div id="portfolio">
 
 				<div id="portfolio_content">
 					<h3>Portfolio</h3>
-					<p>Most of my work has been with Non-Profit Web Branding. I'm currently working on developing iOS Applications.</p>
+					
 					<div class="slideshow-container">
+						<p><i>Most of my work has been with Non-Profit Web Development. In addition to web, I'm developing iOS Applications.</i></p>
 
 						<div class="mySlides fade">
-							<img class="portfolio_icons" src="../portfolio_icons/churches.png">
+							<a href="https://www.storagegives.org">
+							<img class="portfolio_icons" src="../portfolio_icons/storagegives.png">
+							</a>
 						</div>
 
 						<div class="mySlides fade">
-							<img class="portfolio_icons" src="../portfolio_icons/nonprofit.png">
+							<a href="https://www.sozo.co">
+							<img class="portfolio_icons" src="../portfolio_icons/sozochurch.png">
+							</a>
 						</div>
 
 						<div class="mySlides fade">
-							<img class="portfolio_icons" src="../portfolio_icons/business.png">
+							<a href="https://www.gamegoalsapp.com">
+							<img class="portfolio_icons" src="../portfolio_icons/gamegoals.png">
+							</a>
+						</div>
+
+						<div class="mySlides fade">
+							<a href="https://www.map1040.com">
+							<img class="portfolio_icons" src="../portfolio_icons/map1040.png">
+							</a>
 						</div>
 
 						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -78,6 +91,7 @@
 					  <span class="dot" onclick="currentSlide(1)"></span>
 					  <span class="dot" onclick="currentSlide(2)"></span>
 					  <span class="dot" onclick="currentSlide(3)"></span>
+					  <span class="dot" onclick="currentSlide(4)"></span>
 					</div>
 
 				</div>
@@ -85,7 +99,7 @@
 
 			</div>
 
-			<div class="work_container">
+			<div id="work">
 				<div class="work_content">
 					<h3 class="work_title">Work</h3>
 					<div class="work_history">
@@ -153,7 +167,7 @@
 			</div>
 
 
-			<div class="skills_container">
+			<div id="skills">
 				<div class="skills_content">
 					<h3 id="skills_title">Skills & Languages</h3>
 					<div class="skills_box">
@@ -201,83 +215,78 @@
 			</div>
 
 			<section class="timeline">
-				<ol>
-					<li>
-						<div>
-							<time>Born in</time> Louisiana
-						</div>
-					</li>
-					<li>
-						<div>
-							<time>2000</time> Sri Lanka
-						</div>
-					</li>
-					<li>
-						<div>
-							<time>2001</time> India
-						</div>
-					</li>
-					<li>
-						<div>
-							<time>2003</time> Zachary, LA
-						</div>
-					</li>
-					<li>
-						<div>
-							<time>2007</time> Colorado Springs, CO
-						</div>
-					</li>
-					<li>
-						<div>
-							<time>2008</time> Baton Rouge, LA
-						</div>
-					</li>
-					<li>
-						<div>
-							<time>2011</time> Austin, TX
-						</div>
-					</li>
-					<li>
-						<div>
-							<time>2012</time> Birmingham, AL
-						</div>
-					</li>
-					<li>
-						<div>
-							<time>2013</time> Gonzales, LA
-						</div>
-					</li>
-					<li>
-						<div>
-							<time>2014</time> Liberty, MS
-						</div>
-					</li>
-					<li>
-						<div>
-							<time>2015</time> Dallas, TX
-						</div>
-					</li>
-					<li>
-						<div>
-							<time>2017</time> San Francisco, CA
-						</div>
-					</li>
-					<li>
-						<div>
-							<time>2020</time> Zachary, LA
-						</div>
-					</li>
+				<div id="locations">
 
-				</ol>
+					<h3>Where All I've Lived</h3>
+					<ol>
+						<li>
+							<div>
+								<time>Born in</time> Louisiana
+							</div>
+						</li>
+						<li>
+							<div>
+								<time>2000</time> Sri Lanka
+							</div>
+						</li>
+						<li>
+							<div>
+								<time>2001</time> India
+							</div>
+						</li>
+						<li>
+							<div>
+								<time>2003</time> Zachary, LA
+							</div>
+						</li>
+						<li>
+							<div>
+								<time>2007</time> Colorado Springs, CO
+							</div>
+						</li>
+						<li>
+							<div>
+								<time>2008</time> Baton Rouge, LA
+							</div>
+						</li>
+						<li>
+							<div>
+								<time>2011</time> Austin, TX
+							</div>
+						</li>
+						<li>
+							<div>
+								<time>2012</time> Birmingham, AL
+							</div>
+						</li>
+						<li>
+							<div>
+								<time>2013</time> Gonzales, LA
+							</div>
+						</li>
+						<li>
+							<div>
+								<time>2014</time> Liberty, MS
+							</div>
+						</li>
+						<li>
+							<div>
+								<time>2015</time> Dallas, TX
+							</div>
+						</li>
+						<li>
+							<div>
+								<time>2017</time> San Francisco, CA
+							</div>
+						</li>
+						<li>
+							<div>
+								<time>Currently</time> Zachary, LA
+							</div>
+						</li>
 
-				<div class="arrows">
-				    <button class="arrow arrow__prev disabled" disabled>
-				      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_prev.svg" alt="prev timeline arrow">
-				    </button>
-				    <button class="arrow arrow__next">
-				      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_next.svg" alt="next timeline arrow">
-				    </button>
-				  </div>
+					</ol>
+				</div>
 				
 			</section>
 

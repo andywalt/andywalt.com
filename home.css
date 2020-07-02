@@ -19,9 +19,9 @@ body {
 
 .redkeys {
 	max-width: 100%;
-	opacity: 0.7;
-	filter: blur(2px);
-  	-webkit-filter: blur(2px);
+	opacity: 0.5;
+	filter: blur(3px);
+  	-webkit-filter: blur(3px);
 }
 
 .centered_text {
@@ -31,7 +31,7 @@ body {
 	transform: translate(-50%, -50%);
 	text-align: center;
   	color: #D1D1D1;
-  	padding-bottom: 300px;
+  	padding-bottom: 350px;
 }
 
 .status_notifications {
