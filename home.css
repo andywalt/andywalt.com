@@ -34,6 +34,10 @@ body {
   	padding-bottom: 350px;
 }
 
+.centered_text a:hover {
+	color: #8b0000;
+}
+
 .status_notifications {
 	display: flex;
 	width: 700px;
@@ -62,16 +66,30 @@ body {
 	display: flex;
 }
 
-.about_box, .portfolio_box, .work_box, .skills_box, .locations_box {
+.about_container, .portfolio_container, .work_container, .skills_container, .locations_container {
 	flex: 1;
 	height: 300px;
+	
 	background-color: #420000;
 	padding: 5px;
 	margin: 5px;
 	text-align: center;
+	position: relative;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.about_box, .portfolio_box, .work_box, .skills_box, .locations_box {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+
 }
 
 

@@ -216,7 +216,7 @@ body a(not:portfolio_container) {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 45%;
+  top: 35%;
   display: block;
   width: 20px;
   font-weight: bold;
@@ -248,6 +248,10 @@ body a(not:portfolio_container) {
 }
 
 /* Caption text */
+
+.image_dots {
+	padding-top: 20px;
+}
 
 /* The dots/bullets/indicators */
 .dot {
@@ -283,6 +287,44 @@ body a(not:portfolio_container) {
   to {opacity: 1}
 }
 
+.work_with {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	width: 400px;
+	text-align: center;
+	color: #F4F4F4;
+}
+
+.magic_button {
+	border-radius: 25px;
+	letter-spacing: 2px;
+	font-family: 'Bangers';
+	background-color: #206594;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	color: #F4F4F4;
+	text-align: center;
+}
+
+.magic_button a:link, a:active, a:visited {
+	text-decoration: none;
+	color: #F4F4F4;
+	overflow: hidden;
+	cursor: url('../images/flashlight_cursor.png'), auto;
+	
+}
+
+.magic_button:hover {
+	width: 300px;
+	letter-spacing: 5px;
+	cursor: url('../images/flashlight_cursor.png'), auto;
+	
+	
+
+}
 
 #work {
 	width: 100%;
