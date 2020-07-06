@@ -363,6 +363,12 @@ body a(not:portfolio_container) {
 
 }
 
+@media only screen and (max-width: 640px) {
+	#portfolio_content {
+		width: 400px;
+	}
+}
+
 #myForm {
 	display: none;
 	position: fixed;
@@ -451,6 +457,16 @@ body a(not:portfolio_container) {
   font-size: 20px;
 }
 
+@media only screen and (max-width: 640px) {
+	.form_container input[type=text], .form_container input[type=email] {
+		width: 200px;
+	}
+
+	.form_container .btn {
+		width: 200px;
+	}
+}
+
 
 #work {
 	width: 100%;
@@ -489,9 +505,6 @@ body a(not:portfolio_container) {
 	display: flex;
 }
 
-.choose_option {
-}
-
 .work_content img {
 	margin: 0 auto;
 	display: block;
@@ -518,6 +531,48 @@ body a(not:portfolio_container) {
 .roles ul, .organizations ul, .non_profit_role ul, .non_profit_org ul {
 	padding-left: 10px;
 	
+}
+
+@media only screen and (max-width: 640px) {
+
+	#work {
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: relative;
+		overflow: hidden;
+		background: url('../images/backgrounds/sanfrancisco.jpg') no-repeat center center fixed;
+		background-size: cover;
+		background-color: grey;
+	}
+
+	.work_content {
+		all: unset;
+
+	}
+
+	.work_title {
+		margin-top: 50px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.work_history {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: auto;
+		margin-right: auto;
+		width: 300px;
+		
+
+	}
+
+	.work_history ul {
+		list-style-type: initial;
+		font-size: 17px;
+		margin-left: 10px;
+	}
+
 }
 
 #skills {
