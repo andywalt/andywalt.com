@@ -48,55 +48,16 @@ function currentSlide(index) {
 
 
 
-// Reveal Portfolio Content
-function revealPortfolio() {
-  var x = document.getElementById("portfolio_content");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+function openForm() {
+  var form = document.getElementById("myForm");
+  if (form.style.display == "none") {
+    form.style.display = "flex";
   } else {
-    x.style.display = "none";
+    form.style.display = "none";
   }
 }
 
-
-
-// Reveal Role
-function revealRole() {
-  var r = document.getElementById("role_list")
-  var x = document.getElementById("org_list");
-
-  if (r.style.display === "none") {
-    r.style.display = "block";
-    x.style.display = "none";
-  } else {
-    r.style.display = "none";
-  }
-}
-
-
-// Reveal Org
-function revealOrg() {
-  var x = document.getElementById("org_list");
-  var r = document.getElementById("role_list");
-  if ((x.style.display == "none") && (r.style.display === "none")) {
-    x.style.display = "block";
-
-  } else {
-    x.style.display = "none";
-  }
-}
-
-function revealBoth() {
-    var r = document.getElementById("role_list");
-    var x = document.getElementById("org_list");
-    if ((x.style.display == "none") && (r.style.display === "none")) {
-        x.style.display = "block";
-        x.style.padding = "0px 0px 0px 15s0px";
-        r.style.display = "block";
-    } else {
-        x.style.display = "none";
-        r.style.display = "none";
-    }
-
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
 }
 

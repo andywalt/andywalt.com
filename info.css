@@ -147,7 +147,7 @@ body a(not:portfolio_container) {
 	background-color: grey;
 }
 
-#portfolio h3 {
+#portfolio_title {
 	text-align: center;
 	font-size: 50px;
 	letter-spacing: 5px;
@@ -296,35 +296,119 @@ body a(not:portfolio_container) {
 	color: #F4F4F4;
 }
 
+.center_button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+}
+
 .magic_button {
 	border-radius: 25px;
 	letter-spacing: 2px;
 	font-family: 'Bangers';
 	background-color: #206594;
 	width: 200px;
-	margin-left: auto;
-	margin-right: auto;
 	padding: 5px;
 	color: #F4F4F4;
-	text-align: center;
-}
 
-.magic_button a:link, a:active, a:visited {
-	text-decoration: none;
-	color: #F4F4F4;
-	overflow: hidden;
-	cursor: url('../images/flashlight_cursor.png'), auto;
-	
 }
 
 .magic_button:hover {
 	width: 300px;
 	letter-spacing: 5px;
 	cursor: url('../images/flashlight_cursor.png'), auto;
-	
-	
 
 }
+
+#myForm {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #206594;
+	border-radius: 25px;
+	text-align: center;
+}
+
+.form_popup {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.form_container {
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.contact_title {
+	color: #F4F4F4;
+	background-color: #819582;
+	text-align: center;
+	width: 200px;
+	border-radius: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	letter-spacing: 3px;
+	font-size: 30px;
+	margin-top: 50px;
+}
+
+.form_container label {
+	color: #F4F4F4;
+	font-family: 'Bangers', cursive;
+	letter-spacing: 3px;
+} 
+
+.form_container input[type=text], .form_container input[type=email] {
+	width: 400px;
+	background: #F4F4F4;
+	margin: 20px;
+	padding: 16px 20px;
+}
+
+.form_container input::-webkit-input-placeholder {
+  color: #206594;
+  font-family: 'Bangers';
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.form_container input[type=text]:focus, .form_container input[type=email]:focus {
+	background-color: #ddd;
+	color: #819582;
+	outline: none;
+	font-family: 'Muli';
+} 
+
+.buttons_box {
+	margin-left: auto;
+	margin-right: auto;
+}
+.form_container .btn {
+  background-color: #819582;
+  color: #F4F4F4;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom:10px;
+  opacity: 0.8;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 3px;
+  width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+}
+
 
 #work {
 	width: 100%;

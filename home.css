@@ -31,7 +31,12 @@ body {
 	transform: translate(-50%, -50%);
 	text-align: center;
   	color: #D1D1D1;
-  	padding-bottom: 350px;
+  	padding-bottom: 500px;
+}
+
+.centered_text h1 {
+	letter-spacing: 5px;
+	font-size: 50px;
 }
 
 .centered_text a:hover {
