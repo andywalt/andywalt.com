@@ -367,6 +367,10 @@ body a(not:portfolio_container) {
 	#portfolio_content {
 		width: 400px;
 	}
+
+	.work_with {
+		width: 300px;
+	}
 }
 
 #myForm {
@@ -456,6 +460,7 @@ body a(not:portfolio_container) {
   margin-right: auto;
   font-size: 20px;
 }
+
 
 @media only screen and (max-width: 640px) {
 	.form_container input[type=text], .form_container input[type=email] {
@@ -636,6 +641,41 @@ body a(not:portfolio_container) {
 .skills_box ul {
 	line-height: 150%;
 	letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 640px) {
+	#skills {
+		height: 100%;
+	}
+
+	.skills_content {
+		all: unset;
+	}
+
+	#skills_title {
+		width: 250px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 30px;
+		padding: 5px;
+	}
+
+	.skills_box {
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+		margin-right: auto;
+		margin-left: auto;
+		width: 250px;
+		
+	}
+
+	.hard_skills, .soft_skills, .technical_skills {
+		margin: 30px auto;
+		width: 200px;
+
+	}
+
 }
 
 
